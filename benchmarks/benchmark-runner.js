@@ -59,9 +59,10 @@ module.exports = async ({ test, benchmarkPaths }) => {
         const title = document.createElement('h2');
         title.textContent = key;
         benchmarkContainer.appendChild(title);
-        const duration = document.createElement('p');
+        
         duration.textContent = `${data.points[0].y}ms`;
         benchmarkContainer.appendChild(duration);
+        const duration = document.createElement('p');
 
         const textualOutput = `${key}: ${data.points[0].y}`;
         console.log(textualOutput);
